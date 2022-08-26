@@ -58,7 +58,7 @@ function Home() {
 
   return (<>
   <div>
-    {posts && posts.map(post => <Post key={post.id} message={post} props={undefined}/>)}
+    {posts && posts.map(post => <Post key={post.id} message={post} />)}
   </div>
 
   <div>
@@ -68,7 +68,7 @@ function Home() {
 }
 
 interface IntProps{
-  props: any;
+  props?: any;
   key: any;
   message: any;
 }
